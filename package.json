@@ -1,0 +1,50 @@
+{
+  "name": "@hugemce/oxide-icons-tools",
+  "version": "4.0.0",
+  "main": "lib/main/ts/api/Main.js",
+  "types": "lib/main/ts/api/Main.d.ts",
+  "scripts": {
+    "prepublishOnly": "tsc",
+    "build": "npm run clean && tsc",
+    "clean": "git clean -fdx lib scratch",
+    "test": "npm run clean && mocha",
+    "lint": "yarn eslint 'src/**/*.ts'"
+  },
+  "author": "Tiny Technologies",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@ephox/katamari": "^9.1.5",
+    "@tinymce/beehive-flow": "^0.19.0",
+    "@tinymce/eslint-plugin": "^2.3.1",
+    "@types/chai": "^4.3.5",
+    "@types/esm": "^3.2.0",
+    "@types/fancy-log": "^2.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.8",
+    "@types/svgo": "^2.6.2",
+    "@types/vinyl": "^2.0.7",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "chalk": "^4.1.0",
+    "esm": "^3.2.0",
+    "fancy-log": "^2.0.0",
+    "plugin-error": "^2.0.1",
+    "svgo": "^2.4.0",
+    "tslib": "^2.6.1",
+    "vinyl": "^3.0.0"
+  },
+  "files": [
+    "lib",
+    "oxide-svgo",
+    "oxide-verify-composition",
+    "oxide-verify-set"
+  ]
+}
